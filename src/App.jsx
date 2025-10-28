@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useState,useEffect } from 'react';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -16,8 +16,8 @@ function App() {
         <ul>
           {todos.map((todo) => (
             <li key={todo.id}>
-              {todo.title} {todo.completed ? "(Completed)" : "(Pending)"}
-              
+              {todo.title} {todo.completed ? "(Complete)" : "(Pending)"}
+
             </li> 
           ))}
         </ul>
